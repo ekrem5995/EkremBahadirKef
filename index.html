@@ -2,8 +2,8 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Knockout Boks Kulübü</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,45 +15,52 @@
           <li><a href="about.html">Hakkında</a></li>
           <li><a href="programs.html">Programlar</a></li>
           <li><a href="contact.html">İletişim</a></li>
+          <li><a href="schedule.html">Takvim</a></li>
+
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <h2>Şampiyon Gibi Antrenman Yap</h2>
-    <p>Disiplin. Adanmışlık. Kararlılık.</p>
+  <!-- HERO SECTION START -->
+  <section class="hero-banner">
+    <div class="hero-overlay">
+      <h1>Yumruklarını Geleceğe Doğrult</h1>
+      <p>Güç senin içinde. Biz sadece çıkarıyoruz.</p>
+      <a href="programs.html" class="cta-button">Antrenmanlara Göz At</a>
+    </div>
+  </section>
+  <!-- HERO SECTION END -->
+
+  <section class="coach container">
+    <div class="coach-content">
+      <img src="images/coach.jpeg" alt="Hoca Khabib" class="coach-img" />
+      <div>
+        <h3>Hoca Khabib</h3>
+        <p>10 yıldan fazla deneyimiyle profesyonel sporcular yetiştiren baş antrenörümüzdür.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="slider">
-    <div class="slider-text" id="sliderText">Disiplin</div>
-  </section>
-
-  <section class="coach section">
-    <h3>Hoca Ekrem</h3>
-    <p>10 yıldan fazla deneyimiyle profesyonel sporcular yetiştiren baş antrenörümüzdür.</p>
-    <img src="images/coach.jpg" alt="Hoca Ekrem" />
-  </section>
-
-  <section class="achievements section">
+  <section class="stats container">
     <h3>Başarılarımız</h3>
     <div class="grid3">
-      <div>150+ Sporcu</div>
-      <div>10+ Yıl Tecrübe</div>
-      <div>%95 Memnuniyet</div>
+      <div class="card"><strong>150+</strong><br>Sporcu</div>
+      <div class="card"><strong>10+</strong><br>Yıl Tecrübe</div>
+      <div class="card"><strong>%95</strong><br>Memnuniyet</div>
     </div>
   </section>
 
-  <section class="why section">
+  <section class="why container">
     <h3>Neden Knockout?</h3>
     <div class="grid3">
-      <div>Disiplinli Antrenman</div>
-      <div>Yüksek Kondisyon</div>
-      <div>Mental Güç</div>
+      <div class="card">🏋<br>Disiplinli Antrenman</div>
+      <div class="card">💪<br>Yüksek Kondisyon</div>
+      <div class="card">🧠<br>Mental Güç</div>
     </div>
   </section>
 
-  <section class="gallery section">
+  <section class="gallery container">
     <h3>Galeri</h3>
     <div class="gallery-grid">
       <img src="images/muhammed-ali.jpg" alt="Muhammed Ali" />
@@ -64,7 +71,5 @@
   <footer>
     <p>© 2025 Knockout Boks Kulübü</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
