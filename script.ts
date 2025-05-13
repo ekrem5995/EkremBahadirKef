@@ -1,12 +1,11 @@
 
-const form = document.getElementById('contactForm') as HTMLFormElement;
-const response = document.getElementById('responseMessage') as HTMLElement;
+const phrases = ["Disiplin", "Güç", "Hedef"];
+let index = 0;
+const slider = document.getElementById("sliderText");
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  form.reset();
-  response.style.display = 'block';
-  setTimeout(() => {
-    response.style.display = 'none';
-  }, 4000);
-});
+if (slider) {
+  setInterval(() => {
+    index = (index + 1) % phrases.length;
+    slider.textContent = phrases[index];
+  }, 2500);
+}
